@@ -5,19 +5,23 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    line-height: 1.6; /* Set line-height for body text */
 }
 
 header {
     background: linear-gradient(to bottom, rgba(53, 94, 59, 1), rgba(53, 94, 59, 0) 100%); /* Add gradient to header */
     color: white;
-    padding: 2rem; /* Increase padding to make the navigation menu larger */
-    margin-bottom: 0; /* Remove bottom margin */
-    position: relative;
+    padding: 2rem; /* Reduce padding */
+    position: absolute; /* Position it absolutely */
+    width: 100%; /* Make sure it covers the full width */
+    top: 0; /* Align it to the top */
     z-index: 10; /* Ensure it stays on top of the hero image */
+    height: 60px; /* Set a specific height */
 }
 
 header h1, h2 {
     font-family: 'Playfair Display', serif;
+    line-height: 1.2; /* Set line-height for headers */
 }
 
 nav ul {
@@ -35,11 +39,11 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.2rem; /* Increase font size of navigation links */
+    font-size: 1rem; /* Adjust font size of navigation links */
 }
 
 .logo {
-    height: 50px; /* Increase logo size */
+    height: 40px; /* Adjust logo size if necessary */
 }
 
 .dropdown {
@@ -79,26 +83,27 @@ nav ul li a {
 
 .hero {
     position: relative;
-    text-align: center;
-    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh; /* Reduce the height */
     margin: 0; /* Remove margin */
+    color: white;
+    text-align: center;
 }
 
 .hero-image {
     width: 100%;
-    height: 85vh; /* Extend height to 100% of viewport height */
+    height: 100%;
     object-fit: cover; /* Ensure image covers the container while maintaining aspect ratio */
     object-position: top; /* Align the top of the image with the container */
-    margin-top: -15em; /* Adjust for the height of the header */
 }
 
 .hero-text {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -60%);
+    z-index: 1;
     font-family: 'Playfair Display', serif;
-    font-size: 4rem; /* Increase font size for more impact */
+    font-size: 5rem; /* Increase font size for more impact */
     font-weight: bold; /* Make the text bold */
     background: linear-gradient(0deg, #ffaa00, #ffe0a2); /* Gold gradient effect */
     background-clip: text; /* Standard property */
@@ -106,9 +111,22 @@ nav ul li a {
     -webkit-text-fill-color: transparent; /* Make the text transparent to show the gradient */
     text-shadow: 3px 3px 9px rgba(0, 0, 0, 0.7); /* Add subtle shadow for depth */
     letter-spacing: 0.1em; /* Slightly increase letter spacing */
-    text-align: center; /* Center align the text */
+    line-height: 1; /* Line Spacing*/
     padding: 0.5rem 1rem; /* Add some padding for a balanced look */
     transition: background 0.3s ease; /* Smooth transition for the gradient */
+    object-position: left;
+}
+
+/* Styling for the next section */
+#next-section {
+    padding: 2rem; /* Add padding to the section */
+    background-color: #f8f8f8; /* Light background color */
+    color: #333; /* Text color */
+}
+
+#next-section .content {
+    max-width: 1200px; /* Maximum width for the content */
+    margin: 0 auto; /* Center the content */
 }
 
 footer {
