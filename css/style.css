@@ -1,0 +1,120 @@
+/* Basic styles for the Sulaka Law Firm website */
+
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: linear-gradient(to bottom, rgba(53, 94, 59, 1), rgba(53, 94, 59, 0) 100%); /* Add gradient to header */
+    color: white;
+    padding: 2rem; /* Increase padding to make the navigation menu larger */
+    margin-bottom: 0; /* Remove bottom margin */
+    position: relative;
+    z-index: 10; /* Ensure it stays on top of the hero image */
+}
+
+header h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin: 0; /* Remove margin */
+}
+
+nav ul li {
+    margin-right: 1.5rem; /* Increase space between menu items */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem; /* Increase font size of navigation links */
+}
+
+.logo {
+    height: 50px; /* Increase logo size */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #355E3B;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #575757;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin: 0; /* Remove margin */
+}
+
+.hero-image {
+    width: 100%;
+    height: 85vh; /* Extend height to 100% of viewport height */
+    object-fit: cover; /* Ensure image covers the container while maintaining aspect ratio */
+    object-position: top; /* Align the top of the image with the container */
+    margin-top: -15em; /* Adjust for the height of the header */
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem; /* Increase font size for more impact */
+    font-weight: bold; /* Make the text bold */
+    background: linear-gradient(0deg, #ffaa00, #ffe0a2); /* Gold gradient effect */
+    background-clip: text; /* Standard property */
+    -webkit-background-clip: text; /* Vendor-prefixed property for WebKit browsers */
+    -webkit-text-fill-color: transparent; /* Make the text transparent to show the gradient */
+    text-shadow: 3px 3px 9px rgba(0, 0, 0, 0.7); /* Add subtle shadow for depth */
+    letter-spacing: 0.1em; /* Slightly increase letter spacing */
+    text-align: center; /* Center align the text */
+    padding: 0.5rem 1rem; /* Add some padding for a balanced look */
+    transition: background 0.3s ease; /* Smooth transition for the gradient */
+}
+
+footer {
+    background-color: #4C2C2A; /* Walnut Wood */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: -5px; /* Remove gap between footer and image */
+}
