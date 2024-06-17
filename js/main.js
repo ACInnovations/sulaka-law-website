@@ -367,5 +367,18 @@ window.onload = function() {
   }
 };
 
-})(jQuery);
+// $(".nav-link").click(function () {
+// 	// Remove active class from all tab links, images, and text containers
+// 	$(".nav-link").removeClass("active");
+// 	$(".img.img-video").removeClass("active");
+// 	$(".tab-pane").removeClass("active");
 
+// 	// Get the index of the clicked tab link
+// 	var selectedIndex = $(".nav-link").index($(this)) - 6;
+// 	console.log("Selected index:", selectedIndex);
+
+// 	// Get the nth img-video and tab-pane elements and add active class to them
+// 	$(".img.img-video").eq(selectedIndex).addClass("active");
+// 	$(".tab-pane").eq(selectedIndex).addClass("active");
+// });
+})(jQuery);
